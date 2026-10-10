@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="LibraAI - AI powered Digital Library Recommendation System"
+    >
+
+    <title>
+        LIBRA AI | Digital Library
+    </title>
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         BACKGROUND PARTICLES
+    ====================================================== -->
+
+    <div class="particle particle-1"></div>
+    <div class="particle particle-2"></div>
+    <div class="particle particle-3"></div>
+    <div class="particle particle-4"></div>
+    <div class="particle particle-5"></div>
+    <div class="particle particle-6"></div>
+    <div class="particle particle-7"></div>
+    <div class="particle particle-8"></div>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+
+            <div
+                class="logo"
+                onclick="window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                })"
+            >
+
+                <div class="logo-symbol">
+                    L
+                </div>
+
+                <div class="logo-text">
+
+                    <strong>
+                        LIBRA
+                    </strong>
+
+                    <span>
+                        AI
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="nav-links">
+
+                <a
+                    href="#home"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="#recommendations"
+                >
+                    Recommendations
+                </a>
+
+                <a
+                    href="#library"
+                >
+                    Library
+                </a>
+
+                <a
+                    href="#how-it-works"
+                >
+                    How It Works
+                </a>
+
+                <a
+                    href="#about"
+                >
+                    About
+                </a>
+
+            </div>
+
+
+            <button
+                class="nav-button"
+                onclick="scrollToRecommendations()"
+            >
+                Get Started
+            </button>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =====================================================
+         HERO SECTION
+    ====================================================== -->
+
+    <section
+        class="hero"
+        id="home"
+    >
+
+
+        <div class="hero-content">
+
+
+            <div class="hero-badge">
+
+                <span class="status-dot"></span>
+
+                LIBRA AI
+
+                <span class="badge-divider">
+                    /
+                </span>
+
+                INTELLIGENT LIBRARY
+
+            </div>
+
+
+            <h1>
+
+                Discover.
+
+                <span>
+                    Learn.
+                </span>
+
+                Evolve.
+
+            </h1>
+
+
+            <p class="hero-description">
+
+                An intelligent digital library that understands
+                your interests and helps you discover the right
+                learning resources.
+
+            </p>
+
+
+            <div class="hero-actions">
+
+
+                <button
+                    class="btn btn-primary"
+                    onclick="scrollToRecommendations()"
+                >
+
+                    <span>
+                        ✦
+                    </span>
+
+                    Find My Resources
+
+                    <span class="button-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="btn btn-secondary"
+                    onclick="scrollToLibrary()"
+                >
+
+                    Explore Library
+
+                    <span>
+                        ↓
+                    </span>
+
+                </button>
+
+
+            </div>
+
+
+            <div class="hero-mini-stats">
+
+                <div>
+
+                    <strong>
+                        15+
+                    </strong>
+
+                    <span>
+                        Resources
+                    </span>
+
+                </div>
+
+
+                <div class="mini-line"></div>
+
+
+                <div>
+
+                    <strong>
+                        AI
+                    </strong>
+
+                    <span>
+                        Powered
+                    </span>
+
+                </div>
+
+
+                <div class="mini-line"></div>
+
+
+                <div>
+
+                    <strong>
+                        24/7
+                    </strong>
+
+                    <span>
+                        Discovery
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             3D AI ENVIRONMENT
+        ================================================== -->
+
+        <div
+            class="ai-environment"
+            id="aiEnvironment"
+        >
+
+
+            <div class="environment-grid"></div>
+
+
+            <div class="orbit orbit-one"></div>
+
+            <div class="orbit orbit-two"></div>
+
+            <div class="orbit orbit-three"></div>
+
+
+            <!-- FLOATING BOOKS -->
+
+            <div class="floating-book book-1">
+
+                <small>
+                    01
+                </small>
+
+                <strong>
+                    ALGORITHMS
+                </strong>
+
+                <span>
+                    DSA
+                </span>
+
+            </div>
+
+
+            <div class="floating-book book-2">
+
+                <small>
+                    02
+                </small>
+
+                <strong>
+                    AI
+                </strong>
+
+                <span>
+                    INTELLIGENCE
+                </span>
+
+            </div>
+
+
+            <div class="floating-book book-3">
+
+                <small>
+                    03
+                </small>
+
+                <strong>
+                    ML
+                </strong>
+
+                <span>
+                    LEARNING
+                </span>
+
+            </div>
+
+
+            <div class="floating-book book-4">
+
+                <small>
+                    04
+                </small>
+
+                <strong>
+                    JAVA
+                </strong>
+
+                <span>
+                    PROGRAMMING
+                </span>
+
+            </div>
+
+
+            <!-- KNOWLEDGE NODES -->
+
+            <div class="knowledge-node node-1">
+                <span></span>
+            </div>
+
+            <div class="knowledge-node node-2">
+                <span></span>
+            </div>
+
+            <div class="knowledge-node node-3">
+                <span></span>
+            </div>
+
+            <div class="knowledge-node node-4">
+                <span></span>
+            </div>
+
+
+            <!-- CENTRAL AI CORE -->
+
+            <div class="ai-core">
+
+
+                <div class="core-ring ring-1"></div>
+
+                <div class="core-ring ring-2"></div>
+
+
+                <div class="core-glow"></div>
+
+
+                <div class="ai-core-content">
+
+                    <div class="core-symbol">
+                        L
+                    </div>
+
+                    <strong>
+                        LIBRA
+                    </strong>
+
+                    <small>
+                        AI CORE
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="core-label">
+
+                <span class="pulse"></span>
+
+                RECOMMENDATION ENGINE
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         RECOMMENDATIONS
+    ====================================================== -->
+
+    <section
+        class="section recommendations-section"
+        id="recommendations"
+    >
+
+        <div class="section-header">
+
+
+            <div class="section-tag">
+                AI DISCOVERY
+            </div>
+
+
+            <h2>
+                Find Your
+                <span>
+                    Next Resource
+                </span>
+            </h2>
+
+
+            <p>
+                Tell LIBRA AI what you want to learn.
+                Our recommendation engine will find
+                relevant resources from the digital library.
+            </p>
+
+        </div>
+
+
+        <div class="recommendation-container">
+
+
+            <div class="input-header">
+
+                <div>
+
+                    <span class="input-icon">
+                        ✦
+                    </span>
+
+                    <strong>
+                        What do you want to learn?
+                    </strong>
+
+                </div>
+
+                <span class="input-hint">
+                    Press Enter to search
+                </span>
+
+            </div>
+
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="interestInput"
+                    placeholder="Try: Python, Java, Algorithms, Machine Learning..."
+                    autocomplete="off"
+                >
+
+
+                <button
+                    class="search-button"
+                    onclick="getRecommendations()"
+                >
+
+                    <span>
+                        Find Resources
+                    </span>
+
+                    <strong>
+                        →
+                    </strong>
+
+                </button>
+
+            </div>
+
+
+            <!-- QUICK TOPICS -->
+
+            <div class="quick-topics">
+
+                <span>
+                    Quick explore:
+                </span>
+
+
+                <button
+                    onclick="quickSearch('Python')"
+                >
+                    Python
+                </button>
+
+
+                <button
+                    onclick="quickSearch('Java')"
+                >
+                    Java
+                </button>
+
+
+                <button
+                    onclick="quickSearch('Algorithms')"
+                >
+                    Algorithms
+                </button>
+
+
+                <button
+                    onclick="quickSearch('Machine Learning')"
+                >
+                    Machine Learning
+                </button>
+
+
+                <button
+                    onclick="quickSearch('Database')"
+                >
+                    Database
+                </button>
+
+            </div>
+
+
+            <!-- ERROR -->
+
+            <div
+                id="errorMessage"
+                class="error-message hidden"
+            >
+
+                <span>
+                    ⚠
+                </span>
+
+                <div>
+
+                    <strong>
+                        Something went wrong
+                    </strong>
+
+                    <p id="errorText"></p>
+
+                </div>
+
+            </div>
+
+
+            <!-- LOADING -->
+
+            <div
+                id="loading"
+                class="loading hidden"
+            >
+
+                <div class="loader"></div>
+
+                <span>
+                    LIBRA AI is analysing your interests...
+                </span>
+
+            </div>
+
+
+            <!-- EMPTY -->
+
+            <div
+                id="emptyState"
+                class="empty-state"
+            >
+
+                <div class="empty-icon">
+                    ✦
+                </div>
+
+                <h3>
+                    Your personalized library awaits
+                </h3>
+
+                <p>
+                    Enter a topic above and let LIBRA AI
+                    find relevant learning resources for you.
+                </p>
+
+            </div>
+
+
+            <!-- RESULTS -->
+
+            <div
+                id="recommendationResults"
+                class="results-section hidden"
+            >
+
+                <div class="results-header">
+
+                    <div>
+
+                        <span class="section-tag">
+                            MATCHED RESOURCES
+                        </span>
+
+                        <h3>
+                            Recommended For You
+                        </h3>
+
+                    </div>
+
+                    <span
+                        id="resultCount"
+                        class="result-count"
+                    >
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="recommendationCards"
+                    class="recommendation-grid"
+                >
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         LIBRARY
+    ====================================================== -->
+
+    <section
+        class="section library-section"
+        id="library"
+    >
+
+
+        <div class="section-header">
+
+
+            <div class="section-tag">
+                DIGITAL KNOWLEDGE SPACE
+            </div>
+
+
+            <h2>
+                Explore The
+                <span>
+                    Library
+                </span>
+            </h2>
+
+
+            <p>
+                Browse the resources currently available
+                inside the LIBRA AI knowledge base.
+            </p>
+
+        </div>
+
+
+        <div class="library-stats">
+
+            <div class="library-stat">
+
+                <strong id="resourceCount">
+                    15+
+                </strong>
+
+                <span>
+                    Learning Resources
+                </span>
+
+            </div>
+
+
+            <div class="library-stat">
+
+                <strong>
+                    10+
+                </strong>
+
+                <span>
+                    Knowledge Domains
+                </span>
+
+            </div>
+
+
+            <div class="library-stat">
+
+                <strong>
+                    AI
+                </strong>
+
+                <span>
+                    Recommendation
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="libraryGrid"
+            class="library-grid"
+        >
+
+            <div class="library-loading">
+
+                <div class="loader"></div>
+
+                <p>
+                    Loading digital library...
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         HOW IT WORKS
+    ====================================================== -->
+
+    <section
+        class="section how-section"
+        id="how-it-works"
+    >
+
+
+        <div class="section-header">
+
+            <div class="section-tag">
+                THE PIPELINE
+            </div>
+
+            <h2>
+                How LIBRA
+                <span>
+                    Thinks
+                </span>
+            </h2>
+
+            <p>
+                A simple recommendation pipeline designed
+                to connect your interests with relevant resources.
+            </p>
+
+        </div>
+
+
+        <div class="steps">
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <div class="step-icon">
+                    ◉
+                </div>
+
+                <h3>
+                    User Interest
+                </h3>
+
+                <p>
+                    You enter a subject, skill or topic
+                    you want to learn.
+                </p>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <div class="step-icon">
+                    ◇
+                </div>
+
+                <h3>
+                    Text Processing
+                </h3>
+
+                <p>
+                    LIBRA AI cleans and processes the
+                    entered keywords.
+                </p>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <div class="step-icon">
+                    ◎
+                </div>
+
+                <h3>
+                    Match & Score
+                </h3>
+
+                <p>
+                    Resources are scored according to
+                    keyword relevance.
+                </p>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    04
+                </div>
+
+                <div class="step-icon">
+                    ✦
+                </div>
+
+                <h3>
+                    Recommendation
+                </h3>
+
+                <p>
+                    The highest matching resources are
+                    presented to you.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+    <section
+        class="section about-section"
+        id="about"
+    >
+
+
+        <div class="about-card">
+
+
+            <div class="about-left">
+
+                <div class="section-tag">
+                    ABOUT LIBRA AI
+                </div>
+
+                <h2>
+                    Your gateway to
+                    <span>
+                        smarter learning.
+                    </span>
+                </h2>
+
+                <p>
+                    LIBRA AI is a Digital Library Recommendation
+                    System developed as an Artificial Intelligence
+                    project. It uses content-based recommendation
+                    and weighted keyword matching to connect users
+                    with relevant educational resources.
+                </p>
+
+            </div>
+
+
+            <div class="about-right">
+
+
+                <div class="tech-item">
+
+                    <span>
+                        FRONTEND
+                    </span>
+
+                    <strong>
+                        HTML / CSS / JavaScript
+                    </strong>
+
+                </div>
+
+
+                <div class="tech-item">
+
+                    <span>
+                        BACKEND
+                    </span>
+
+                    <strong>
+                        FastAPI / Python
+                    </strong>
+
+                </div>
+
+
+                <div class="tech-item">
+
+                    <span>
+                        DATA
+                    </span>
+
+                    <strong>
+                        CSV / Pandas
+                    </strong>
+
+                </div>
+
+
+                <div class="tech-item">
+
+                    <span>
+                        RECOMMENDER
+                    </span>
+
+                    <strong>
+                        Weighted Keyword Matching
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-brand">
+
+                <div class="logo">
+
+                    <div class="logo-symbol">
+                        L
+                    </div>
+
+                    <div class="logo-text">
+
+                        <strong>
+                            LIBRA
+                        </strong>
+
+                        <span>
+                            AI
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <p>
+                    Intelligent discovery for digital learning.
+                </p>
+
+            </div>
+
+
+            <div class="footer-status">
+
+                <span class="status-dot"></span>
+
+                SYSTEM ONLINE
+
+            </div>
+
+
+            <div class="footer-copy">
+
+                Artificial Intelligence PBL
+
+                <span>
+                    •
+                </span>
+
+                Digital Library Recommendation System
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script
+        src="script.js"
+    ></script>
+
+
+</body>
+
+</html>
